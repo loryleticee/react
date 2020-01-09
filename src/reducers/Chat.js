@@ -12,11 +12,13 @@ export const messageList = (state = INIT_STATE, action) => {
 
     switch (action.type) {
         case ADD_MESSAGE :
-            return [...state, {
+            let newState = {
                 username: action.username,
                 message : action.message,
                 sentAt  : action.sentAt,
-            }];
+            };
+
+            return [...state, newState];
 
         case LOAD_MESSAGE_PENDING :
             return state;

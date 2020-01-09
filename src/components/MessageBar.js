@@ -4,6 +4,8 @@ import {useDispatch, useSelector} from "react-redux";
 import {addMessage} from '../actions';
 //import {loadMessagePending} from '../actions';
 
+import {ws} from "../services/websocket";
+
 
 const MessageBar = (props) => {
     const [messageContent, setMessageContent] = useState('');
@@ -17,12 +19,9 @@ const MessageBar = (props) => {
 
         if (messageContent) {
             let message = {
-                type        : "ADD_MESSAGE",
                 message     : messageContent,
                 username    : username,
-                sentAt      : new Date()
             };
-
            dispatch(addMessage(message))
         }
 

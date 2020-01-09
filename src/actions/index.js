@@ -1,4 +1,5 @@
 import axios from 'axios';
+import {ws} from "../services/websocket";
 
 const URL = "https://my-json-server.typicode.com/tlenclos/formation-react-fake-server/messages";
 
@@ -16,12 +17,17 @@ export const logUser = (username) => ({
     username,
 });
 
-export const addMessage = (message) => ({
-    type        : ADD_MESSAGE,
-    message     : message.message,
-    username    : message.username,
-    sentAt      : message.sentAt,
-});
+export const addMessage = (message) => {
+    const action = {
+        type        : ADD_MESSAGE,
+        message     : message.message,
+        username    : message.username,
+        sentAt      : new Date(),
+    };
+    ws.send(JSON.stringify(action));
+
+    return action;
+};
 
 export const loadMessagePending = async(dispatch) => {
     /*
