@@ -23,7 +23,7 @@ export const addMessage = (message) => {
         message     : message.message,
         sentAt      : new Date(),
     };
-    //ws.send(JSON.stringify(action));
+    ws.send(JSON.stringify(action));
 
     return action;
 };
@@ -32,10 +32,10 @@ export const getMessages = () => {
     return (dispatch) => {
         dispatch({type: LOAD_MESSAGE_PENDING});
         return axios.get(URL)
-            .then(json => { console.log('succes')
+            .then(json => {
                 dispatch({type: LOAD_MESSAGE_SUCCESS, messages: json.data})
             })
-            .catch(err => {console.log('error')
+            .catch(err => {
                 dispatch({type: LOAD_MESSAGE_ERROR, error: err})})
     }
 };

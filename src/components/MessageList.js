@@ -9,7 +9,7 @@ const MessageList = () => {
 
 const dispatch = useDispatch();
     const messages = useSelector(state => state.messageList);
-console.log(messages)
+
     useEffect(() => {
         dispatch(getMessages())
     }, []);
