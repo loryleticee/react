@@ -1,9 +1,8 @@
 import axios from 'axios';
 import {ws} from "../services/websocket";
+import {useSelector} from "react-redux";
 
 const URL = "https://my-json-server.typicode.com/tlenclos/formation-react-fake-server/messages";
-
-let nextIdMessage = 0;
 
 export const ADD_MESSAGE            = "ADD_MESSAGE";
 export const LOAD_MESSAGE_PENDING   = "LOAD_MESSAGE_PENDING";
@@ -20,37 +19,23 @@ export const logUser = (username) => ({
 export const addMessage = (message) => {
     const action = {
         type        : ADD_MESSAGE,
-        message     : message.message,
         username    : message.username,
+        message     : message.message,
         sentAt      : new Date(),
     };
-    ws.send(JSON.stringify(action));
+    //ws.send(JSON.stringify(action));
 
     return action;
 };
 
-export const loadMessagePending = async(dispatch) => {
-    /*
-    return () => {
-        response = await axios.get(URL).then(
-            values => dispatch(addMessage(response,))
-        );
-    }*/
-
+export const getMessages = () => {
+    return (dispatch) => {
+        dispatch({type: LOAD_MESSAGE_PENDING});
+        return axios.get(URL)
+            .then(json => { console.log('succes')
+                dispatch({type: LOAD_MESSAGE_SUCCESS, messages: json.data})
+            })
+            .catch(err => {console.log('error')
+                dispatch({type: LOAD_MESSAGE_ERROR, error: err})})
+    }
 };
-
-/*
-export const loadMessageSucces = (message, username) => ({
-    type    : LOAD_MESSAGE_SUCCESS,
-    key     : nextIdMessage++,
-    username,
-    message,
-});
-
-export const loadMessageError = (message, username) => ({
-    type    : LOAD_MESSAGE_ERROR,
-    key     : nextIdMessage++,
-    username,
-    message,
-});
- */

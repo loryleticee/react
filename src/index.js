@@ -14,8 +14,6 @@ import {BrowserRouter as Router,
     Route,
     Link
 } from 'react-router-dom';
-import {ws} from "./services/websocket";
-
 // i18n
 
 //STYLE

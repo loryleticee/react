@@ -1,7 +1,7 @@
 import {store} from "../";
 import {addMessage} from "../actions";
 
-export const ws = new WebSocket('wss://srrj6.sse.codesandbox.io');
+export const ws = new WebSocket('ws://srrj6.sse.codesandbox.io');
 
 ws.onopen = () => {
     // on connecting, do nothing but log it to the console

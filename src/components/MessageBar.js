@@ -2,15 +2,10 @@ import React, {useState} from 'react';
 import {useDispatch, useSelector} from "react-redux";
 //import PropTypes from 'prop-types';
 import {addMessage} from '../actions';
-//import {loadMessagePending} from '../actions';
-
-import {ws} from "../services/websocket";
-
 
 const MessageBar = (props) => {
     const [messageContent, setMessageContent] = useState('');
 
-    //console.log(loadMessagePending());
     const username = useSelector(state => state.username);
     const dispatch = useDispatch();
 
@@ -19,8 +14,8 @@ const MessageBar = (props) => {
 
         if (messageContent) {
             let message = {
-                message     : messageContent,
                 username    : username,
+                message     : messageContent,
             };
            dispatch(addMessage(message))
         }
