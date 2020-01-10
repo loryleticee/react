@@ -9,12 +9,12 @@ import {applyMiddleware, compose, createStore} from 'redux';
 import {adminReducer} from './reducers';
 import {Provider} from 'react-redux';
 import ReduxThunk from 'redux-thunk';
-import {BrowserRouter as Router,
+import {
+    BrowserRouter as Router,
     Switch,
     Route,
-    Link
+    Link,
 } from 'react-router-dom';
-// i18n
 
 //STYLE
 const backgroundStyle = {
@@ -37,27 +37,29 @@ export const store = createStore(adminReducer,
 );
 
 ReactDOM.render(
-        <Provider store = {store}>
-            <Router>
-                <div style = {backgroundStyle}>
-                    <nav>
-                        <ul>
-                            <li>
-                                <Link to="/chat">Chat</Link>
-                            </li>
-                            <li>
-                                <Link to="/">Login</Link>
-                            </li>
-                        </ul>
-                    </nav>
+    <Provider store = {store}>
+        <Router>
+            <div style = {backgroundStyle}>
+                <nav>
+                    <ul>
+                        <li>
+                            <Link to="/chat">Chat</Link>
+                        </li>
+                        <li>
+                            <Link to="/">
+                                Login
+                            </Link>
+                        </li>
+                    </ul>
+                </nav>
 
-                    <Switch>
-                        <Route exact path="/" component={Log}/>
-                        <Route exact path="/chat" component={Chat} />
-                    </Switch>
-                </div>
-            </Router>
-        </Provider>
+                <Switch>
+                    <Route exact path="/" component={Log}/>
+                    <Route exact path="/chat" component={Chat} />
+                </Switch>
+            </div>
+        </Router>
+    </Provider>
     , document.getElementById('root')
 );
 

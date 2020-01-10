@@ -1,6 +1,5 @@
 import axios from 'axios';
 import {ws} from "../services/websocket";
-import {useSelector} from "react-redux";
 
 const URL = "https://my-json-server.typicode.com/tlenclos/formation-react-fake-server/messages";
 

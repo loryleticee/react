@@ -8,11 +8,11 @@ import {useDispatch} from "react-redux";
 const MessageList = () => {
 
 const dispatch = useDispatch();
-    const messages = useSelector(state => state.messageList);
+const messages = useSelector(state => state.messageList);
 
     useEffect(() => {
         dispatch(getMessages())
-    }, []);
+    }, [dispatch]);
 
     return (
         <ShowMessage

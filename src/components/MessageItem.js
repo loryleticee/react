@@ -1,13 +1,12 @@
 import React from 'react';
 import Emoji from "react-emoji-render";
-import{ FormattedMessage } from'react-intl';
+import PropTypes from 'prop-types';
 
 const MessageItem = (props) => {
-console.log(props.message)
     const date = (date) => {
         if (date instanceof Date  ) {
             return date.toDateString();
-        }else{
+        } else {
             return date;
         }
     };
@@ -18,10 +17,12 @@ console.log(props.message)
                 <small>{date(props.message.sentAt)} </small>
                 <small> {`@ ${props.message.username}`} </small>
                 <Emoji text = {`¬ ${props.message.message}`} />
-
             </span>
         </div>
     );
 };
 
+MessageItem.propTypes = {
+    message: PropTypes.object.isRequired
+};
 export default MessageItem;

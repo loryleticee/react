@@ -1,11 +1,18 @@
+import {messages_en} from './en';
+import {messages_fr} from './fr';
 
-export const translation = {
-    en: {
-        "chat.title": "🇬🇧 Jolichat",
-        "action.send": "Send"
-    },
-    fr: {
-        "chat.title": "🇫🇷 JoliTchat",
-        "action.send": "Envoyer"
+const FR = 'fr-FR';
+const US = 'en-US';
+
+export const translate = (props) => {
+    switch (props) {
+        case FR :
+            return messages_fr();
+
+        case US :
+            return messages_en();
+
+        default :
+            return messages_fr();
     }
 };
