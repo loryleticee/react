@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from "axios";
 import {ws} from "../services/websocket";
 
 const URL = "https://my-json-server.typicode.com/tlenclos/formation-react-fake-server/messages";

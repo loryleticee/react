@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
+import React, {useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {addMessage} from '../actions';
+import {addMessage} from "../actions";
 
 const MessageBar = (props) => {
-    const [messageContent, setMessageContent] = useState('');
+    const [messageContent, setMessageContent] = useState("");
 
     const username = useSelector(state => state.username);
     const dispatch = useDispatch();

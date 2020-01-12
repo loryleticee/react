@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 import Emoji from "react-emoji-render";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 const MessageItem = (props) => {
     const date = (date) => {

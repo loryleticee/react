@@ -2,10 +2,9 @@ import {ADD_MESSAGE, LOAD_MESSAGE_PENDING, LOAD_MESSAGE_ERROR, LOAD_MESSAGE_SUCC
 
 const INIT_STATE = [
     {
-        username: 'toto',
-        message: 'hello word',
+        username: "toto",
+        message: "hello word",
         sentAt  : new Date()
-
     }
 ];
 
@@ -24,10 +23,10 @@ export const messageList = (state = INIT_STATE, action) => {
             return state;
 
         case LOAD_MESSAGE_SUCCESS:
-            const f = (msg, index) =>(
+            const newData = (msg, index) =>(
                 state.push(msg)
             );
-            action.messages.forEach(f);
+            action.messages.forEach(newData);
 
             return  state;
 

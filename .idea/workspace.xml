@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e77ea0c2-1c37-4672-a94a-193969dc5952" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/Messages.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Chat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MessageBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MessageBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MessageItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MessageItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MessageList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MessageList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/ShowMessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/ShowMessage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/Chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/Chat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/websocket.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/websocket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/translations/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/translations/en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/translations/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/translations/fr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/translations/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/translations/index.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1WAHvAyJGB2XjPLF27ttmaMfijC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+    <option name="showServicesTree" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e77ea0c2-1c37-4672-a94a-193969dc5952" name="Default Changelist" comment="" />
+      <created>1578585706902</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578585706902</updated>
+      <workItem from="1578585708357" duration="44238000" />
+      <workItem from="1578731578702" duration="200000" />
+      <workItem from="1578756168819" duration="169000" />
+      <workItem from="1578780572953" duration="1453000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="304" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578683819155">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="304" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1578683819155" />
+    <state x="646" y="254" key="RollbackChangesDialog" timestamp="1578852690486">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="646" y="254" key="RollbackChangesDialog/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1578852690486" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1578670212461">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="500" height="445" key="SwitcherDM/0.0.1680.1050@0.0.1680.1050" timestamp="1578670212461" />
+    <state x="498" y="282" width="835" height="486" key="find.popup" timestamp="1578852824929">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="498" y="282" width="835" height="486" key="find.popup/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1578852824929" />
+  </component>
+</project>

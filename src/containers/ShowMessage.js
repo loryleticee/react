@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-const className = 'alert-info';
+const className = "alert-info";
 
 //${propos => props.color}
 const DivMsg  = styled.div`

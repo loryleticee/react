@@ -1,6 +1,6 @@
 export const messages_fr = () => (
     {
-        'app.welcome':
+        "app.welcome":
             "Salut les mecs",
     }
 );

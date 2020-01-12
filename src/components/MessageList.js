@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect} from "react";
 import MessageItem from "./MessageItem";
 import ShowMessage from "../containers/ShowMessage";
 import {useSelector} from "react-redux";

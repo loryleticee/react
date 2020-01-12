@@ -4,7 +4,7 @@ import MessageBar from "./MessageBar";
 import styled from "styled-components";
 import {useSelector} from "react-redux";
 import {Redirect} from "react-router-dom";
-import {IntlProvider, FormattedMessage} from 'react-intl';
+import {IntlProvider, FormattedMessage} from "react-intl";
 import {translate} from "../translations/index";
 
 const locale = navigator.language;

@@ -1,20 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import Chat from './components/Chat';
-import Log from './components/Log';
-import * as serviceWorker from './serviceWorker';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import {applyMiddleware, compose, createStore} from 'redux';
-import {adminReducer} from './reducers';
-import {Provider} from 'react-redux';
-import ReduxThunk from 'redux-thunk';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import Chat from "./components/Chat";
+import Log from "./components/Log";
+import * as serviceWorker from "./serviceWorker";
+import "bootstrap/dist/css/bootstrap.min.css";
+import {applyMiddleware, compose, createStore} from "redux";
+import {adminReducer} from "./reducers";
+import {Provider} from "react-redux";
+import ReduxThunk from "redux-thunk";
 import {
     BrowserRouter as Router,
     Switch,
     Route,
     Link,
-} from 'react-router-dom';
+} from "react-router-dom";
 
 //STYLE
 const backgroundStyle = {
@@ -60,7 +60,7 @@ ReactDOM.render(
             </div>
         </Router>
     </Provider>
-    , document.getElementById('root')
+    , document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
