@@ -24,7 +24,7 @@ export const messageList = (state = INIT_STATE, action) => {
 
         case LOAD_MESSAGE_SUCCESS:
             const newData = (msg, index) =>(
-                state.push(msg)
+                state.concat(msg)
             );
             action.messages.forEach(newData);
 
